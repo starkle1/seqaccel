@@ -1,4 +1,4 @@
-#seqaccel
+# seqaccel
 
 Tools for loading 3D accelerometer data, computing the Euclidean norm,
 and applying sliding window algorithms (mean, binary trend, threshold).
