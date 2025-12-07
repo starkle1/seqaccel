@@ -3,6 +3,7 @@
 Tools for loading 3D accelerometer data, computing the Euclidean norm,
 and applying sliding window algorithms (mean, binary trend, threshold).
 Includes a ggplot2 wrapper for visualization.
+ggplot 2 is listed in the package `Imports:` field and will be installed automatically when installing the package from GitHub.
 
 _Installation_
 
