@@ -48,7 +48,8 @@ df <- sliding_apply(df, "accel", 1000, window_binary_trend, "binary")
 
 
 Threshold-based change:
-Example in the course use 1000, but any window size and threshold can be used
+Example in the course uses 1000, but any window size and threshold can be used
+
 df <- sliding_apply(df, "accel", 1000, window_threshold_change,
                     "thresholded", threshold = 0.5)
 
