@@ -33,7 +33,8 @@ df <- load_accel_csv(
 )
 
 # Apply sliding window mean
-Example in the course use 1000, but any window size can be used
+Example in the course uses 1000, but any window size can be used
+
 df <- sliding_apply(df, "accel", 1000, window_mean, "mean")
 
 # Plot raw + mean signal
