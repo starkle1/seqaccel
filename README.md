@@ -22,12 +22,18 @@ library(seqaccel)
 
 Example
 # Load Example Window CSV
+The package does NOT include the course dataset.
+
+Download the file Example_window.csv from the course materials
+and provide the correct path on your computer.
+
 df <- load_accel_csv(
-  "Example_window.csv",
+  "C:/path/to/Example_window.csv",
   x = 3, y = 4, z = 5, time = 2
 )
 
 # Apply sliding window mean
+Example in the course use 1000, but any window size can be used
 df <- sliding_apply(df, "accel", 1000, window_mean, "mean")
 
 # Plot raw + mean signal
@@ -41,7 +47,7 @@ df <- sliding_apply(df, "accel", 1000, window_binary_trend, "binary")
 
 
 Threshold-based change:
-
+Example in the course use 1000, but any window size and threshold can be used
 df <- sliding_apply(df, "accel", 1000, window_threshold_change,
                     "thresholded", threshold = 0.5)
 
